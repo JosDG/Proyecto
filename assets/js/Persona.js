@@ -42,7 +42,7 @@ class Persona {
       "</td><td>" +
       "<button type='button' class='btn btn-primary' onclick='iniciaSecion(" +
       index +
-      ")'>Sesion</button> " +
+      ")'>Sesión</button> " +
       "</td></tr>";
   }
 }
