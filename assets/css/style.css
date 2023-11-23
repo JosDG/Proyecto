@@ -1,0 +1,97 @@
+
+*.dark{
+    color: white;
+}
+body.dark{
+    background-color: #222;
+}
+.dark .section-bg {
+    background-color: #111;
+}
+.dark .section-bg h2 {
+    color: white;
+}
+
+.dark .section-bg p{
+    color: #707070;
+}
+.dark .header{
+    background: #222;
+}
+.dark .header h1{
+    color: white;
+}
+.dark a.active{
+    color: #fff;
+}
+.dark a{
+    color:  #707070;
+}
+.switch{
+    background:#343d5b;
+    border-radius:1000px;
+    border:none;
+    position:relative;
+    cursor:pointer;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    outline:0
+}
+.switch::after{
+    content:"";
+    display:block;
+    width:30px;
+    height:30px;
+    position:absolute;
+    background:#f1f1f1;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius:100px;
+    -webkit-transition:.3s ease all;
+    transition:.3s ease all;
+    -webkit-box-shadow:0 0 2px 2px rgba(0,0,0,.2);
+    box-shadow:0 0 2px 2px rgba(0,0,0,.2)
+}
+.switch.active{
+    background:orange;
+    color:#000
+}
+.switch.active::after{
+    right:0;
+    left:unset
+}
+.switch span{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    background:0 0;
+    color:#fff;
+    padding:0 0 0 7px
+}
+
+.dark .row.gy{
+    background-color: #222;
+}
+
+.dark form{
+    background-color: #222;
+}
+
+.dark .info-item{
+    background-color: #222;
+}
+
+.dark .php-email-form {
+    background-color: #222;
+}
+.dark input{
+    background-color: grey;
+    color: gray;
+}
+
+.dark .form-control{
+    background-color: grey;
+}

@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+  background-image: url(../../img/login.jpeg);
+  background-size: cover;
+}
+.darkmode{
+    padding: 20px;
+    float: right;
+}
+.conte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.dark .form-information {
+  background-color: #333;
+}
+.dark .form-information h2 {
+  color: white;
+}
+
+.dark .form-information p {
+  color: white;
+}
+
+.container-form {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  max-width: 900px;
+  transition: all 1s ease;
+}
+
+.information {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #f5f5dc;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.dark .information {
+  background-color: #444;
+}
+
+.dark .information h2 {
+  color: white;
+}
+
+.dark .information p {
+  color: #999;
+}
+
+.info-childs {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.info-childs h2 {
+  font-size: 2.5rem;
+}
+
+.info-childs p {
+  margin: 15px 0;
+  color: #555;
+}
+
+.info-childs input {
+  background-color: transparent;
+  outline: none;
+  border: solid 2px red;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-childs input:hover {
+  background-color: red;
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+  padding: 0 30px;
+}
+
+.form-information-childs h2 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.form-information-childs p {
+  color: #555;
+}
+
+.icons {
+  margin: 15px 0;
+}
+
+.icons i {
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: red;
+  border: solid thin red;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icons i:hover {
+  background-color: #cc3d3d;
+  color: #fff;
+}
+
+.form {
+  margin: 30px 0 0 0;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form label input {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #333;
+}
+
+.form label i {
+  color: red;
+}
+
+.form input[type="submit"] {
+  background-color: red;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form input[type="submit"]:hover {
+  background-color: red;
+}
+
+/*Responsive form*/
+
+@media screen and (max-width: 670px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container-form {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .information {
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .form-information {
+    width: 100%;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+}
+
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: 0;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background: orange;
+  color: #000;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: 0 0;
+  color: #fff;
+  padding: 0 0 0 7px;
+}

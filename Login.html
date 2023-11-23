@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="img/logo2.png" rel="icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styleLogin.css" />
+    <title>CulinaryMasters-Login</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="darkmode">
+      <button class="switch" id="Switch">
+        <span><i class="fas fa-sun"></i></span>
+        <span><i class="fas fa-moon"></i></span>
+      </button>
+    </div>
+    <div class="conte">
+      <div class="container-form register">
+        <div class="information">
+          <div class="info-childs">
+            <center><img src="img/logo3.png" alt="" /></center>
+            <h2>Bienvenido</h2>
+            <p>
+              Para unirte a nuestra comunidad por favor Registrarte con tus
+              datos...
+            </p>
+          </div>
+        </div>
+
+        <div class="form-information">
+          <div class="form-information-childs">
+            <h2><img src="img/logo.png" alt="" /> Crea una Cuenta</h2>
+            <div class="icons">
+              <i class="bx bxl-google"></i>
+              <i class="bx bxl-github"></i>
+              <i class="bx bxl-linkedin"></i>
+            </div>
+            <p>Usar Email Para Registrarte</p>
+            <form class="form" action="javascript:enviardatos();">
+              <label>
+                <i class="bx bx-user"></i>
+                <input
+                  id="name"
+                  required
+                  type="text"
+                  placeholder="Nombre Completo"
+                />
+              </label>
+              <label>
+                <i class="bx bx-envelope"></i>
+                <input
+                  id="email"
+                  required
+                  type="email"
+                  placeholder="Correo Electronico"
+                />
+              </label>
+              <label>
+                <i class="bx bx-lock"></i>
+                <input
+                  id="pasw"
+                  required
+                  type="password"
+                  placeholder="Contraseña"
+                />
+              </label>
+              <center><button type="submit" class="btn btn-danger">Registrase</button> </center> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabla">
+      <div class="container-fluid">
+        <center><h3>Tabla Registrados</h3></center>
+        <table class="table table-dark table-striped" id="tablaD">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Email</th>
+              <th scope="col">Contraceña</th>
+              <th scope="col">Modificar</th>
+              <th scope="col">Eliminar</th>
+              <th scope="col">Inicio</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scriptLogin.js"></script>
+    <script src="assets/js/Persona.js"></script>
+    <script src="assets/js/controladorMain.js"></script>
+  </body>
+</html>
